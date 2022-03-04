@@ -1,18 +1,14 @@
-<div class="container">
-    <div class="bg-img"></div>
-    <h1 class="title">welcome rocketeer !</h1>
-    <!-- <div class="logo">
-        <img src="../../../../../assets/img/logo.png" alt="logo">
-    </div> -->
-    <div class="btn">
-        <button class="btn1">
-            start questionnaire
-        </button>
-        <button class="btn2">
-            submitted applications
-        </button>
-    </div>
-    <div class="img">
+<ng-container *ngIf="data">
+<div class="bg-color" *ngFor=" let item of data" >
+<div class="bg-img">
+<img src="../../../../../assets/img/logo.png" alt="logo" class="logo">
+<div class="btn">
+    <a [routerLink]="['about']" class="btn1">{{item.text}}</a>
+    <button  class="btn2">{{item.longText}}</button>
+</div>
+ <div class="img">
         <img src="../../../../../assets/img/rocketman.png" alt="man">
     </div>
 </div>
+</div>
+</ng-container>

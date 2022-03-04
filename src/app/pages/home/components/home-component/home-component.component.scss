@@ -1,62 +1,49 @@
-.container{
-    max-width: 1920px;
+.bg-color{
+    background-color: black;
     width:100%;
     height: 1080px;
-    background-color: black;
-    background-size: cover;
-        .bg-img{
+    position: relative;
+    .bg-img{
         background-image: url('../../../../../assets/img/stars.png');
         position: absolute;
-        width: 1920px;
+        // width: 1920px;
+        width:100%;
         height: 1080px;
         margin: 0 auto;
-        z-index: 999999999999999999;
-        background-size: cover;
-    }
-    //  .logo{
-    //     position: absolute;
-    //     width: 1090px;
-    //     height: 212px;
-    //     left: 434px;
-    //     top: 175px;
-    //  } 
-     .title{
-        font-family: Rowdies;
+        z-index: 0.999999999999999999;
+         background-size: cover;
+    
+      .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 175px;
+        padding-left: 435px;
+    } 
+   .btn{
+    display: flex;
+     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 105px;
+    margin-left:100px;
+    .btn1{
+        background-color: #FE3B1F;
+        border-radius: 50px;
+        font-size: 24px;
+        font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
-        font-size: 96px;
-        line-height: 119px;
+        line-height: 29px;
         display: flex;
-        justify-content: center;
         align-items: center;
         text-align: center;
-        color: #FE3B1F;
-        padding: 175px;
+        color: #FFFFFF;
         letter-spacing: 1px;
         text-transform: capitalize;
-     }
-     .btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 105px;
-        .btn1{
-            background-color: #FE3B1F;
-            border-radius: 50px;
-            font-size: 24px;
-            font-family: Montserrat;
-            font-style: normal;
-            font-weight: normal;
-            line-height: 29px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: #FFFFFF;
-            letter-spacing: 1px;
-            text-transform: capitalize;
-            padding: 20px 70px;
-        }
+        padding: 20px 70px;
+        text-decoration: none;
+    }
         .btn2{
             display: flex;
             align-items: center;
@@ -74,7 +61,6 @@
             letter-spacing: 0.5px;
             text-transform: capitalize;
         }
-        
      }
     .img{
         // width: 409.92px;
@@ -83,4 +69,5 @@
         justify-content: center;
         align-items: center;
     }
+   }
 }

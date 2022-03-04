@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
+interface DataInterface{
+  text:string,
+  longText:string
+}
+
+
+
 @Component({
   selector: 'app-home-component',
   templateUrl: './home-component.component.html',
@@ -7,7 +14,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponentComponent implements OnInit {
 
-  constructor() { }
+  public data:DataInterface[] = [
+    {
+      text: " start questionnaire",
+      longText: "  submitted applications"
+    }
+  ]
+
+  constructor() { 
+  }
 
   ngOnInit(): void {
   }

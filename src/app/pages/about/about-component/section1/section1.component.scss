@@ -1,0 +1,67 @@
+.title{
+    font-family: Rowdies;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FE3B1F;
+    width: 716px;
+    height: 128px;
+    padding-left: 105px;
+    padding-top: 112px;
+    padding-bottom: 131px;
+
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 140px;
+    .user-name{
+        width: 455px;
+        height: 54px;
+        background: #FFFFFF;
+        border: 1px solid #525557;
+        box-sizing: border-box;
+        font-family: Montserrat;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #454545;
+        padding-left: 57px;
+        margin-bottom: 37px;
+    }
+    .div{
+        margin-bottom: 20px;
+    }
+    .red{
+        border:3px solid red;
+    }
+    .green{
+        border: 3px solid rgb(99, 248, 99);
+    }
+}
+.icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+    padding-left: 341px;
+    padding-right: 300px;
+    .active{
+        color:red;
+    }
+    .circle{
+        color: #FE3B1F;
+        opacity: 0.1;
+    }
+}
+

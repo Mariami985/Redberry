@@ -1,0 +1,60 @@
+<h1 class="title">
+    Hey, Rocketeer, what are your coordinates?
+</h1>
+<form class="form-class" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <div class="user">
+        <input  class="user-name"
+          formControlName="name"
+          placeholder="First Name *"
+          [class.red]="myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched)"
+          [class.green]="!myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched)">
+        <div class="div" *ngIf="myForm.get('name')?.invalid && (myForm.get('name')?.dirty || myForm.get('name')?.touched)">
+            First Name is required!
+        </div>
+        <input class="user-name"
+        formControlName="lastName" 
+        placeholder="Last Name *"
+        [class.red]="myForm.get('lastName')?.invalid && (myForm.get('lastName')?.dirty || myForm.get('lastName')?.touched)"
+        [class.green]="!myForm.get('lastName')?.invalid && (myForm.get('lastName')?.dirty || myForm.get('lastName')?.touched)">
+        <div class="div" *ngIf="myForm.get('lastName')?.invalid && (myForm.get('lastName')?.dirty || myForm.get('lastName')?.touched)">
+            Last name should include 3 or more characters!
+        </div>
+        <input class="user-name" 
+            formControlName="email"
+            placeholder="E mail *"
+            [class.red]="myForm.get('email')?.invalid && (myForm.get('email')?.dirty || myForm.get('email')?.touched)"
+            [class.green]="!myForm.get('email')?.invalid && (myForm.get('email')?.dirty || myForm.get('email')?.touched)">
+        <div class="div" *ngIf="myForm.get('email')?.invalid && (myForm.get('email')?.dirty || myForm.get('email')?.touched)">
+            Email is required!
+        </div>
+        <input class="user-name" formControlName="tel" placeholder="+995 5 _ _ _ _ _(optional)">
+            <!-- [class.red]="myForm.get('tel')?.invalid && (myForm.get('tel')?.dirty || myForm.get('tel')?.touched)"
+            [class.green]="!myForm.get('tel')?.invalid && (myForm.get('tel')?.dirty || myForm.get('tel')?.touched)">
+            <div class="div" *ngIf="myForm.get('tel')?.invalid && (myForm.get('tel')?.dirty || myForm.get('tel')?.touched)">
+                Mobile phone is required!
+            </div> -->
+    </div>
+</form>
+<div class="icon">
+    <a [routerLink] = "['/']" routerLinkActive="active">
+        <fa-icon [icon]="faArrow"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/']" routerLinkActive="active">
+        <fa-icon [icon]="faCircle"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/skills']"class="circle">
+        <fa-icon [icon]="faCircle"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/']" class="circle">
+        <fa-icon [icon]="faCircle"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/']" class="circle">
+        <fa-icon [icon]="faCircle"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/']" class="circle">
+        <fa-icon [icon]="faCircle"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/']" routerLinkActive="active">
+        <fa-icon [icon]="faArrow2"></fa-icon>
+    </a>
+</div>
