@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface DataInterface{
-  text:string,
-  longText:string
-}
-
+import { MainData } from 'src/app/modules/main-data';
 
 
 @Component({
@@ -14,9 +9,9 @@ interface DataInterface{
 })
 export class HomeComponentComponent implements OnInit {
 
-  public data:DataInterface[] = [
+  public data: MainData[] = [
     {
-      text: " start questionnaire",
+      title: " start questionnaire",
       longText: "  submitted applications"
     }
   ]

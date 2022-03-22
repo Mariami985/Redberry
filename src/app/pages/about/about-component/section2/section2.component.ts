@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface DataInterface {
-  title: string,
-  text:string,
-}
+import { MainData } from 'src/app/modules/main-data';
 
 
 @Component({
@@ -13,10 +9,10 @@ interface DataInterface {
 })
 export class Section2Component implements OnInit {
 
-  public data:DataInterface[]=[
+  public data: MainData[]=[
     {
       title: "Redberry Origins",
-      text: "ou watch “What? Where? When?” Yeah. Our founders used to play it.  That's where they got a question about a famous American author and screenwriter Ray Bradbury. Albeit, our CEO Gaga Darsalia forgot the exact name and he answered Ray Redberry. And at that moment, a name for a yet to be born company was inspired - Redberry"
+      longText: "ou watch “What? Where? When?” Yeah. Our founders used to play it.  That's where they got a question about a famous American author and screenwriter Ray Bradbury. Albeit, our CEO Gaga Darsalia forgot the exact name and he answered Ray Redberry. And at that moment, a name for a yet to be born company was inspired - Redberry"
     }
   ]
   constructor() { }

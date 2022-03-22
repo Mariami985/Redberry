@@ -4,6 +4,7 @@ import { SkillsRoutingModule } from './skills-routing.module';
 import { SkillsComponentsComponent } from './skills-components/skills-components.component';
 import { Section1Component } from './skills-components/section1/section1.component';
 import { Section2Component } from './skills-components/section2/section2.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { Section2Component } from './skills-components/section2/section2.compone
   ],
   imports: [
     CommonModule,
-    SkillsRoutingModule
+    SkillsRoutingModule,
+    FontAwesomeModule
   ]
 })
 export class SkillsModule { }

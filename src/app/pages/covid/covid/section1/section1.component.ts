@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faCircle, faCircleArrowLeft, faCircleArrowRight, faCircleChevronDown, faCircleMinus } from '@fortawesome/free-solid-svg-icons';
+import { faCircle, faCircleArrowLeft, faCircleArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-section1',
@@ -10,9 +10,6 @@ export class Section1Component implements OnInit {
   faArrow = faCircleArrowLeft;
   faArrow2 = faCircleArrowRight;
   faCircle= faCircle;
-  faArrow3 = faCircleChevronDown;
-  faCircleM = faCircleMinus;
-
   constructor() { }
 
   ngOnInit(): void {

@@ -27,6 +27,8 @@ export class Section1Component implements OnInit {
   onSubmit(form: FormGroup) {
     if(this.myForm.invalid){
       alert('Oops, something heppend wrong! Please Check!')
+    }else{
+      alert('hhhhh')
     }
   }
 

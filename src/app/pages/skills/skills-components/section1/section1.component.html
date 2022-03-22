@@ -1,1 +1,42 @@
-<p>section1 works!</p>
+<h2 class="title">
+     tell us about your skills
+</h2>
+    <div class="inputdiv">
+        <input type="text" placeholder="Skills" class="inputSkill">
+        <fa-icon [icon] = "faArrow3" class="arrowD"></fa-icon>
+    </div>
+    <div class="input">
+        <input type="text" placeholder="experience diuraion in years" class="input1">
+        <button class="btn">add programing language</button>
+    </div>
+    <div class="inputdiv2">
+        <input type="text" placeholder="PHP        years of experience: 3" class="inputSkill">
+        <fa-icon [icon]="faCircleM" class="arrowM"></fa-icon>
+    </div>
+    <div class="inputdiv2">
+        <input type="text" placeholder="REACT     years of experience: 2" class="inputSkill">
+        <fa-icon [icon]="faCircleM" class="arrowM"></fa-icon>
+    </div>
+    <div class="icon">
+        <a [routerLink] = "['/']" routerLinkActive="active">
+            <fa-icon [icon]="faArrow"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/about']" routerLinkActive="active" class="circle">
+            <fa-icon [icon]="faCircle"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/skills']" routerLinkActive="active" >
+            <fa-icon [icon]="faCircle"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/covid']" class="circle">
+            <fa-icon [icon]="faCircle"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/']" class="circle">
+            <fa-icon [icon]="faCircle"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/']" class="circle">
+            <fa-icon [icon]="faCircle"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/']" routerLinkActive="active">
+            <fa-icon [icon]="faArrow2"></fa-icon>
+        </a>
+    </div>

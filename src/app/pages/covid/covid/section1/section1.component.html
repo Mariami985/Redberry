@@ -1,0 +1,75 @@
+<h1 class="h1-title">
+    covid stuff
+</h1>
+    <form action="" method="get" class="form-class">
+        <p class="p-title">how woud you prefer to work ?</p>
+        <div class="class-div">
+            <input type="radio" name="work" class="sairme" value="sairme">
+            <label for="sairme">from sairme office</label>
+        </div>
+        <div class="class-div">
+            <input type="radio" name="work" class="home" value=from home>
+            <label for="home">from home</label>
+        </div>
+        <div class="class-div">
+            <input type="radio" name="work" class="hybrid" value="hybrid">
+            <label for="hybrid">hybrid</label>
+        </div>
+    </form>
+    <!-- 2 form -->
+    <form action="" method="get" class="form-class">
+        <p class="p-title">did you contact covid 19 ?</p>
+        <div class="class-div">
+            <input type="radio" name="answer" class="answer" value="yes">
+            <label for="yes">yes</label>
+        </div>
+        <div class="class-div">
+            <input type="radio" name="answer" class="answer" value="no">
+            <label for="no">no</label>
+        </div>
+    </form>
+    <!-- 3 form -->
+    <form action="" method="get" class="form-class">
+        <p class="p-title">when?</p>
+        <input type="date" class="data" name="data" placeholder="data">
+    </form>
+    <!-- 4 form -->
+    <form action="" method="get" class="form-class">
+        <p class="p-title">have you been vacctinatied ?</p>
+        <div class="class-div">
+            <input type="radio" name="answer" class="answer" value="yes">
+            <label for="yes">yes</label>
+        </div>
+        <div class="class-div">
+            <input type="radio" name="answer" class="answer" value="no">
+            <label for="no">no</label>
+        </div>
+    </form>
+    <!-- 5 form -->
+    <form action="" method="get" class="form-class">
+        <p class="p-title">when ?</p>
+        <input type="date" class="data" name="data" placeholder="data">
+    </form>
+    <div class="icon">
+        <a [routerLink] = "['/']" routerLinkActive="active">
+            <fa-icon [icon]="faArrow"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/']" routerLinkActive="active">
+            <fa-icon [icon]="faCircle"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/skills']"class="circle" routerLinkActive="active">
+            <fa-icon [icon]="faCircle"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/covid']"  routerLinkActive="active">
+            <fa-icon [icon]="faCircle"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/']" class="circle">
+            <fa-icon [icon]="faCircle"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/']" class="circle">
+            <fa-icon [icon]="faCircle"></fa-icon>
+        </a>
+        <a  [routerLink] = "['/']" routerLinkActive="active" >
+            <fa-icon [icon]="faArrow2"></fa-icon>
+        </a>
+    </div>

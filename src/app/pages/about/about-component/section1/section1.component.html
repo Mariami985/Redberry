@@ -33,8 +33,10 @@
             <div class="div" *ngIf="myForm.get('tel')?.invalid && (myForm.get('tel')?.dirty || myForm.get('tel')?.touched)">
                 Mobile phone is required!
             </div> -->
+            <!-- <button type="submit" >Submit</button> -->
     </div>
 </form>
+
 <div class="icon">
     <a [routerLink] = "['/']" routerLinkActive="active">
         <fa-icon [icon]="faArrow"></fa-icon>
@@ -45,7 +47,7 @@
     <a  [routerLink] = "['/skills']"class="circle">
         <fa-icon [icon]="faCircle"></fa-icon>
     </a>
-    <a  [routerLink] = "['/']" class="circle">
+    <a  [routerLink] = "['/covid']" class="circle">
         <fa-icon [icon]="faCircle"></fa-icon>
     </a>
     <a  [routerLink] = "['/']" class="circle">
