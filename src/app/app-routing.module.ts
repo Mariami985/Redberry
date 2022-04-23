@@ -17,6 +17,18 @@ const routes: Routes = [
   {
     path:'covid',
     loadChildren: () => import('./pages/covid/covid.module').then(item => item.CovidModule)
+  },
+  {
+    path: 'aboutyou',
+    loadChildren: () => import('./pages/aboutyou/aboutyou.module').then(item => item.AboutyouModule)
+  },
+  {
+    path:'submit',
+    loadChildren:() => import('./pages/submit/submit.module').then(item => item.SubmitModule)
+  },
+  {
+    path: 'thanks',
+    loadChildren: () => import('./pages/thanks/thanks.module').then(item => item.ThanksModule)
   }
 ];
 

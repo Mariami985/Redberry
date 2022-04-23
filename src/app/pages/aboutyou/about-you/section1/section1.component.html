@@ -1,0 +1,47 @@
+<h1 class="title">
+    what about you?
+</h1>
+<p class="answer-p">
+    Would you attend Devtalks and maybe also organize your own?
+</p>
+<div class="form">
+    <input type="radio" id="yes" name="answer" value="YES">
+    <label for="yesl">YES</label>
+</div>
+<div class="form"> 
+    <input type="radio" id="no" name="answer" value="NO">
+    <label for="no">NO</label><br>
+</div> 
+<p class="text-p">
+    What would you speak about at Devtalk?
+</p>
+<textarea id="text" placeholder="I would ..."></textarea>
+<p class="text-p">
+    Tell us something special
+</p>
+<textarea id="text" placeholder="I  ..."></textarea>
+<div class="icon">
+    <a [routerLink] = "['/']" routerLinkActive="active">
+        <fa-icon [icon]="faArrow"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/']" routerLinkActive="active">
+        <fa-icon [icon]="faCircle"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/skills']"class="circle2">
+        <fa-icon [icon]="faCircle"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/covid']" class="circle2"  >
+        <fa-icon [icon]="faCircle"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/aboutyou']" routerLinkActive="active">
+        <fa-icon [icon]="faCircle"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/submit']" class="circle">
+        <fa-icon [icon]="faCircle"></fa-icon>
+    </a>
+    <a  [routerLink] = "['/thanks']" class="circle2" >
+        <fa-icon [icon]="faArrow2"></fa-icon>
+    </a>
+</div>
+
+

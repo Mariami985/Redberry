@@ -1,0 +1,42 @@
+.ng-div{
+   width:1536px;
+   height: 745px;
+   background-color: black;
+   margin: -8px;
+}
+.btn{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding-top: 20%;
+
+}
+.btn1{
+   margin-bottom:30px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 44px;
+   text-transform: capitalize;
+   color: #FFFFFF;
+   background-color: #FE3B1F;
+   border-radius: 50px;;
+   width: 395px;
+   height: 79px;
+}
+.btn2{
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 34px;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   text-decoration-line: underline;
+   color: #FFFFFF;
+   background-color: black;
+   border: none;
+}
